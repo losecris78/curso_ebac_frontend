@@ -13,16 +13,20 @@
     <main>
         <section>
             <h2>Formulário</h2>
+            <span><small>*Campos requeridos</small></span><br>
             <form type="post">
-                <label for="name">Nome</label>
-                <input type="text" id="name" placeholder="Seu nome"><br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="" id="" placeholder="exa@example.com"><br>
-                <label for="senha">Senha</label>
-                <input type="password" name="" id="senha" placeholder="oito caracteres"><br><br>
+                <label for="name">*Nome</label>
+                <input type="text" id="name" placeholder="Seu nome" required><br>
+                <label for="email">*Email</label>
+                <input type="email" id="email" name="" id="" placeholder="exa@example.com" required><br>
+                <label for="senha">*Senha</label>
+                <input type="password" name="" id="senha" placeholder="sua senha" required><br><br>
                 <button type="submit">Cadastrar</button>
             </form>
         </section>
     </main>
+    <footer>
+       <span> &copy;2023 Todos os direitos reservados</span>
+    </footer>
 </body>
 </html>
