@@ -1,0 +1,63 @@
+*{
+    width: 98%;
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    font-family: 'Barlow', sans-serif; ;
+}
+header{
+    background-color: #eee;
+display:flex;
+flex-wrap: space-between;
+align-items: center;
+}
+h1, h2, h3{
+    font-family: 'Amaranth', sans-serif;
+
+}
+header >h1{
+    font-size: 2.5rem;
+    color:goldenrod;
+    padding: 50px;
+    margin: 0 auto;
+
+}
+header li{
+    display:inline;
+    list-style: none;
+    margin-left: 20px;
+    font-weight:bold;
+    color:crimson;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(225, 37, 37);
+}
+img{
+width: 280px;
+border: 2px solid #777;
+
+}
+section h2{
+    display:block;
+}
+section{
+    display:flex;
+    flex-wrap: space-between;
+}
+#sports{
+    background-color:rgba(184, 135, 11, 0.449);
+}
+#technology{
+background-color:rgba(95, 158, 160, 0.239) ;}
+#economy{
+background-color: rgba(128, 255, 0, 0.187)
+}
+#entertainment{
+background-color:rgba(150, 72, 44, 0.554);
+}
+h2{
+    font-weight: 300;
+}
