@@ -6,7 +6,7 @@
     font-family: 'Barlow', sans-serif; ;
 }
 header{
-    background-color: #eee;
+background-color: #eee;
 display:flex;
 flex-wrap: space-between;
 align-items: center;
