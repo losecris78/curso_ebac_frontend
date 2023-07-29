@@ -1,15 +1,22 @@
 *{
-    width: 98%;
+    width: 100%;
     box-sizing: border-box;
     margin: 0;
     padding:0;
     font-family: 'Barlow', sans-serif; ;
 }
 header{
-background-color: #eee;
 display:flex;
-flex-wrap: space-between;
 align-items: center;
+justify-content:space-between;
+background-color: #7777777a;
+}
+header time{
+    width: 300px;
+}
+section{
+    margin:0 auto;
+
 }
 h1, h2, h3{
     font-family: 'Amaranth', sans-serif;
@@ -26,37 +33,66 @@ header li{
     display:inline;
     list-style: none;
     margin-left: 20px;
-    font-weight:bold;
+    font-weight: bold;
     color:crimson;
 }
-a{
+article a, li a{
     text-decoration: none;
+    color:#494848;
+}
+article{
+    margin:12px;
 }
 a:hover{
     color:rgb(225, 37, 37);
 }
 img{
-width: 280px;
+width: 300px;
 border: 2px solid #777;
 
 }
 section h2{
     display:block;
+    padding:10px;
 }
-section{
+.container{
     display:flex;
-    flex-wrap: space-between;
+    justify-content:center;
+}
+
+article h3{
+    margin: 20px 0;
+
 }
 #sports{
     background-color:rgba(184, 135, 11, 0.449);
 }
+#sports header{
+    background-color:rgba(184, 135, 11, 0.171);
+    width:max-content;
+}
 #technology{
-background-color:rgba(95, 158, 160, 0.239) ;}
+background-color:rgba(95, 158, 160, 0.239) ;
+}
+#technology header{
+    background-color:rgba(95, 158, 160, 0.61) ;
+    width:max-content;
+}  
+
 #economy{
-background-color: rgba(128, 255, 0, 0.187)
+background-color: rgba(128, 255, 0, 0.187);
+
+}
+#economy header{
+    background-color: rgba(128, 255, 0, 0.493) ;
+    width:max-content;
 }
 #entertainment{
 background-color:rgba(150, 72, 44, 0.554);
+}
+#entertainment header{
+    background-color:rgba(150, 72, 44, 0.274);
+    width:max-content
 }
 h2{
     font-weight: 300;
