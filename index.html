@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+    <header><h1>Lista de tarefas</h1></header>
+    <div><form>
+        <label for="nova_tarefa">Agregar nova tarefa</label>
+        <input type="text" name="tarefa nova" id="nova_tarefa" required>
+        <button type="submit" id="add">Agregar +</button>
+    </form></div>
+    <main class="novaLista">
+        <h2>Tarefas de hoje <span id="date">Hoje</span></h2>
+        <!--button type="button" id="verTarefas">Ver tarefas</button-->
+        <div id="lista_completa">
+            <ul>
+                <!--li>Estudar curso EBAC</li>
+                <li>Trabalhar</li-->
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span>| Cristian L Sedas</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
