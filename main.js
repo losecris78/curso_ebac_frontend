@@ -1,27 +1,52 @@
 $(document).ready(function(){
     //chamando o formulario e modificando o default
 
-$('form').on('submit', function(e){
-    e.preventDefault();
- const new_task = $('#nova_tarefa').val();
- //const task_list = $(`<li style="display: none"><a' >${new_task}</a> </li>`);
- const task_list = $(`<li style="display: none">${new_task}</li>`);
- //agregando a nova tarefa na lista, usando o segundo botáo
- $('#add').on('click', function(){
-     $(new_task).appendTo(task_list);
-     $(task_list).appendTo('ul');
-     $(task_list).fadeIn(1500);
-     $('#nova_tarefa').val('');
-   /* alert(`la nueva tarea es ${new_task}
-     y la lista es ${task_list}`)*/
-     $('li').on ('click',function(){
-         $('li').addClass('done');
-     })
- })
- /*$('#verTarefas').click(function(){
+    $('form').on('submit', function(e){
+        e.preventDefault();
+        let novaTarefa = $('#nova_tarefa').val();
+        const tarefas = $('<li></li>');
+        $(`<a>${novaTarefa}</a>`).appendTo(tarefas);
+        $(tarefas).appendTo('#lista_completa ul');
+
+        $('#nova_tarefa').val('');
+
+        $('a').on('click',function(){
+            $('li a:hover').addClass('done');
+        })
+    });
+
+
+    /*$('form').on('submit', function(e){
+        $('li').on('click',function(){
+            $('li a').addClass('done');
+        })
+        e.preventDefault();
+        const new_task = $('#nova_tarefa').val();
+        const total_tasks = [];
+        //const task_list = $(`<li><a>${new_task}</a> </li>`);
+      //  const task_list = $(`<li><a>${new_task}</a></li>`);
+        //agregando a nova tarefa na lista, usando o segundo botáo
+        $('#add').click(function(){
+            if( $.inArray('new_task', total_tasks) !== -1 ){
+                alert("esa tarefa ja foi inserida")
+            } else{
+                $(new_task).appendTo(total_tasks);
+                $(total_tasks).appendTo('ul')
+                
+                alert(`la nueva tarea es ${new_task}
+                y la lista es ${total_tasks}`)
+            }
+        })
+
+            
+        $('#nova_tarefa').val('');
+        $('a').on ('click',function(){
+            $('li:visited').addClass('done');
+        })
+ $('#verTarefas').click(function(){
      alert(`Prueba de funcionamiento del botón ${new_task}`);
+    })
     })*/
-})
 
 });
 

@@ -59,7 +59,7 @@ button{
     margin: 10px 20px;
     
 }
-li {
+ul {
     cursor: pointer;
 }
 .done{
@@ -67,3 +67,6 @@ li {
     color:crimson;
 }
 
+li a:visited{
+    text-decoration: line-through;
+}

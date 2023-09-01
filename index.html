@@ -11,20 +11,25 @@
 </head>
 <body>
     <header><h1>Lista de tarefas</h1></header>
-    <div><form>
-        <label for="nova_tarefa">Agregar nova tarefa</label>
-        <input type="text" name="tarefa nova" id="nova_tarefa" required>
-        <button type="submit" id="add">Agregar +</button>
-    </form></div>
-    <main class="novaLista">
-        <h2>Tarefas de hoje <span id="date">Hoje</span></h2>
-        <!--button type="button" id="verTarefas">Ver tarefas</button-->
-        <div id="lista_completa">
-            <ul>
-                <!--li>Estudar curso EBAC</li>
-                <li>Trabalhar</li-->
-            </ul>
+    <main>
+        <div>
+            <form>
+                <label for="nova_tarefa">Agregar nova tarefa</label>
+                <input type="text" name="tarefa nova" id="nova_tarefa">
+                <button type="submit" id="add">Agregar +</button>
+            </form>
         </div>
+        <div class="novaLista">
+            <h2>Tarefas de hoje <span id="date">Hoje</span></h2>
+            <!--button type="button" id="verTarefas">Ver tarefas</button-->
+            <div id="lista_completa">
+                <ul>
+                    <li id="nueva"><a>Estudar curso EBAC</a></li>
+                    <li><a>Trabalhar</a></li-->
+                </ul>
+            </div>
+        </div>
+
     </main>
     <footer>
         <p>&copy;<span id="year"></span>| Cristian L Sedas</p>
