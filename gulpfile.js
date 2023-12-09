@@ -33,9 +33,8 @@ function default_function (){
 
 
 exports.default = gulp.series(default_function, minimize);*/
-exports.sass = compilar_sass;
-exports.watch = function(){
-    gulp.watch('./source/styles/*.scss',gulp.series(compilar_sass,compressor,image_compressor));
+exports.sass = compilar_sass;exports.default = function(){
+    gulp.watch('./source/styles/*.scss',gulp.series(compilar_sass)),
+    gulp.watch('./source/scipts/*.js',gulp.series(compressor)),
+    gulp.watch('./source/images/*',gulp.series(image_compressor));
 };
-exports.javascript = compressor;
-exports.images= image_compressor;
