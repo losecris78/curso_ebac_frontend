@@ -1,0 +1,24 @@
+@use "variables";
+
+body{
+    background-color: variables.$cor_primario;
+    color:variables.$style_secondary;
+    
+}
+h1{
+    color:variables.$style_color;
+    text-align: center;
+    font-size: variables.$size_tittle;
+}
+section{
+    display:flex;
+    max-width: 1024px;
+}
+.galeria{
+    border:1px solid variables.$style_secondary;
+    max-width: 60%;
+}
+.galeria img{
+    width:100%;
+    display: block;
+}

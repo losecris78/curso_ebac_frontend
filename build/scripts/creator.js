@@ -1,0 +1,1 @@
+const list=document.createElement("ul"),item=document.createElement("li"),second=(item.textContent="Estou na lista!",document.createElement("li")),content=(second.textContent="Eu também!",list.append(item,second),list.append(second),list.append(item,second),list.append(second),document.querySelector("#lista"));content.appendChild(list);
