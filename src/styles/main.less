@@ -1,0 +1,125 @@
+@import "mapas.less";
+@breakpointTablet: ~"(max-width:1024px) and (min-width:500px)";
+@breakpointMobile: ~"(max-width:767px)";
+@padding1: 16px 0;
+@padding2: 8px 0;
+@padding3: 56px 0;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #colors[backgroundColor];
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+        width: 100%;
+        margin: 0 auto;
+    @media @breakpointTablet {
+        width: 85%;
+        
+        
+    }
+    
+}
+
+header {
+    background-color: #colors[secondaryColor];
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: @padding1;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    font-weight: bold;
+    margin-left: 24px;
+}
+
+.menu li a {
+    color: #colors[textColor];
+    text-decoration: none;
+}
+
+section {
+    padding: @padding3;
+}
+
+.products {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+    @media @breakpointTablet{
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+    @media @breakpointMobile{
+        display:block;
+    }
+}
+.product-item{
+    @media @breakpointMobile{
+        margin-bottom: 32px;
+    }
+}
+
+.product-item img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.product-button {
+    display: block;
+    background-color: #colors[secondaryColor];
+    color: #colors[textColor];
+    text-align: center;
+    padding: @padding2;
+    border-radius: 8px;
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.product-button:hover {
+    background-color:#colors[productColor];
+}
+
+/*@media screen and (max-width: 1023px) {
+    .container {
+        max-width: 80%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    
+
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}*/
